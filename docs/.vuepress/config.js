@@ -1,4 +1,5 @@
 module.exports = {
+  base: '/Blog/',
   dest: 'blog',
   theme: 'reco',
   title: "latte and cat",
