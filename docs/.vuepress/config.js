@@ -68,7 +68,7 @@ module.exports = {
       owner: 'fanzheming',
       repo: 'Blog',
       clientId: 'a1a26b26dfe555844fe1',
-      clientSecret: '8b6e99e09de01599507a5c3ac35a8b9c0ab6ccdf',
+      clientSecret: 'd2615c5a75ee6a637ce635821b81b53dcc7a8344',
       autoCreateIssue: true,
       locale: 'zh-CN'
     }
