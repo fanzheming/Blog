@@ -2,18 +2,13 @@
 
 > 记录生活的点滴时光
 
-博客搭建工具: [VuePress](https://vuepress.vuejs.org/zh/)  
-博客使用主题: [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)  
+## 搭建
+- 工具: [VuePress](https://vuepress.vuejs.org/zh/)  
+- 主题: [vuepress-theme-reco](https://vuepress-theme-reco.recoluan.com/)  
+- 评论插件: [Vssue](https://vssue.js.org/zh/)
 
-编写博客时添加标签、日期和分类
-```
----
-title: xxxxxxxxxxxxx
-date: xxxx-xx-xx
-sidebar: auto
-tags:
- - xxx
-categories:
- - xxx
----
-```
+## 部署
+- 持续集成: [travis-ci](https://travis-ci.com/)
+
+## 视频入门
+- bilibili: [【啰里啰嗦】一步步搭建 VuePress 及优化](https://www.bilibili.com/video/BV1vb411m7NY)
