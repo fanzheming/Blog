@@ -86,8 +86,8 @@ $(document).ready(function () {
 
 <br/>
 
-```js
-用 ```js 选择语言包裹后会显示提示色:
+```js{2}
+用 ```js{2} 选择语言包裹后会显示提示色, 2表示高亮第2行:
 $(document).ready(function () {
     alert('markdown');
 });
