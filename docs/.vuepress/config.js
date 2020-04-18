@@ -42,7 +42,7 @@ module.exports = {
         text: '标签' // 默认 “标签”
       }
     },
-    logo: '/head2.png',
+    logo: '/head1.png',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
@@ -54,7 +54,7 @@ module.exports = {
     lastUpdated: '最后更新时间',
     // 作者
     author: 'fanzheming',
-    authorAvatar: '/head2.png',
+    authorAvatar: '/head1.png',
     // 备案号
     // record: '豫ICP备19035192号',
     // recordLink: 'http://www.beian.miit.gov.cn/',
@@ -62,15 +62,15 @@ module.exports = {
     // cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41172602000151',
     // 项目开始时间
     startYear: '2020',
-    /**
-     * valine 设置 (if you need valine comment )
-     */
-    valineConfig: {
-      appId: 'XDwlSXS2pD137bPrPpwQaqqD-gzGzoHsz',// your appId
-      appKey: 'CQ8FKrMUP76LwycPcKlDoRqV', // your appKey
-      placeholder: '是时候展现真正的技术了',
-      avatar: 'wavatar',
-      serverUrl: 'https://leanserver.smallsunnyfox.com'
+    // vssue评论功能
+    vssueConfig: {
+      platform: 'github',
+      owner: 'fanzheming',
+      repo: 'Blog',
+      clientId: 'a1a26b26dfe555844fe1',
+      clientSecret: '8b6e99e09de01599507a5c3ac35a8b9c0ab6ccdf',
+      autoCreateIssue: true,
+      locale: 'zh-CN'
     }
   },
   markdown: {
