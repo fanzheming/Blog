@@ -20,6 +20,7 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:fanzheming/Blog.git master:gh-pages
 
+#使用travis ci持续集成
 git push -f https://${GITHUB_TOKEN}@github.com/fanzheming/Blog.git master:gh-pages
 
 cd -

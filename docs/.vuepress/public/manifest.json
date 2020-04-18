@@ -1,7 +1,7 @@
 {
-  "name": "LatteAndCat",
-  "short_name": "LAC",
-  "description": "安小狐的个人博客",
+  "name": "RainyDay",
+  "short_name": "RD",
+  "description": "fanzheming's blog",
   "icons": [
     {
       "src": "/icons/cat16.png",
@@ -20,5 +20,5 @@
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#fff",
-  "theme_color": "#FF66CC"
+  "theme_color": "#409EFF"
 }
