@@ -11,7 +11,8 @@ sticky:
 ---
 
 <!-- more -->
-<p style="font-size:30px;color:green;">1. 基本的markdown语法</p>
+
+<p style="font-size:20px;color:green;">1. 基本的markdown语法</p>
 
 - 二级标题
 ## 这是二级标题
@@ -136,20 +137,25 @@ $(document).ready(function () {
 | 单元格  | 单元格 |
 | 单元格  | 单元格 |
 ```
+<br/>
 
 - 支持的html元素
 
 <p>目前支持的 HTML 元素有：&lt;kbd&gt;&lt;b&gt;&lt;i&gt;&lt;em&gt;&lt;sup&gt;&lt;sub&gt;&lt;br&gt;等</p>
 
 <br/>
-相关网站链接：
 
-[菜鸟教程 markdown教程](https://www.runoob.com/markdown/md-tutorial.html)
+参考链接：
 
-[菜鸟工具 markdown在线编辑器](https://c.runoob.com/front-end/712)
+- [菜鸟教程 markdown教程](https://www.runoob.com/markdown/md-tutorial.html)
+
+- [菜鸟工具 markdown在线编辑器](https://c.runoob.com/front-end/712)
+
 ______
+
 <br/>
-<p style="font-size:30px;color:green;">2. vuepress扩展的markdown语法</p>
+
+<p style="font-size:20px;color:green;">2. vuepress扩展的markdown语法</p>
 
 - 自定义容器
 ::: tip
@@ -174,11 +180,22 @@ ______
 这是一个提示
 :::
 
-key可以是: tip、warning、danger、details
+容器类型:  "tip"|"warning"|"danger"|"details"
 ```
+<br/>
 
-相关网站链接：
+- 内置组件:  徽章
 
-[Vuepress Markdown 拓展](https://www.vuepress.cn/guide/markdown.html#header-anchors)
+徽章  <Badge text="提示" type="tip" vertical="top"/>
+```
+<Badge text="提示" type="tip" vertical="top"/>
+type:  "tip"|"warning"|"error"  默认:"tip"
+vertical: "top"|"middle" 默认:"top"
+```
+<br/>
+
+参考链接：
+
+- [Vuepress Markdown 拓展](https://www.vuepress.cn/guide/markdown.html#header-anchors)
 
 
