@@ -1,7 +1,6 @@
 ---
 title: localStorage变动监听
 date: 2020-01-09
-sidebar: auto
 tags: 
  - js
  - Vue

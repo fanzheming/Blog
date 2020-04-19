@@ -1,27 +1,22 @@
 ---
 title: markdown语法
 date: 2020-04-18
-sidebar: false
 tags: 
  - markdown
 categories:
  - 其它
-sticky:
- - true
 ---
 
-<!-- more -->
-
-<p style="font-size:20px;color:green;">1. 基本的markdown语法</p>
+## 1. 基本语法
 
 - 二级标题
-## 这是二级标题
+
 `语法： ##符号，然后后面紧跟一个空格符号加上内容`
 
 <br/>
 
 - 三级标题
-### 这是三级标题
+
 `语法：###符号，然后后面紧跟一个空格符号加上内容`
 
 <br/>
@@ -155,7 +150,7 @@ ______
 
 <br/>
 
-<p style="font-size:20px;color:green;">2. vuepress扩展的markdown语法</p>
+## 2. vuepress扩展语法及内置组件
 
 - 自定义容器
 ::: tip
@@ -184,7 +179,7 @@ ______
 ```
 <br/>
 
-- 内置组件:  徽章
+- 内置组件
 
 徽章  <Badge text="提示" type="tip" vertical="top"/>
 ```

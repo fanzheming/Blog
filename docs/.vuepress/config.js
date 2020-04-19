@@ -1,3 +1,4 @@
+const sidebar = require('./config/sidebar/')
 module.exports = {
   base: '/Blog/',
   dest: 'blog',
@@ -28,6 +29,7 @@ module.exports = {
         icon: 'reco-message',
         items: [
           { text: 'GitHub', link: 'https://github.com/fanzheming', icon: 'reco-github' },
+          { text: 'bilibili', link: 'https://space.bilibili.com/320956381', icon: 'reco-bilibili' },
         ]
       }
     ],
@@ -45,26 +47,28 @@ module.exports = {
     logo: '/head1.png',
     // 搜索设置
     search: true,
+    // 搜索结果最多展示项数
     searchMaxSuggestions: 10,
-    // 自动形成侧边导航
-    sidebarDepth: 1,
+    // 侧边栏深度
+    sidebarDepth: 2,
     displayAllHeaders: false,
-    sidebar: 'auto',
+    sidebar,
     // 最后更新时间
     lastUpdated: '最后更新时间',
     // 作者
     author: 'fanzheming',
+    // 头像
     authorAvatar: '/head1.png',
-    // 备案号
-    // record: '豫ICP备19035192号',
-    // recordLink: 'http://www.beian.miit.gov.cn/',
-    // cyberSecurityRecord: '豫公网安备41172602000151号',
-    // cyberSecurityLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41172602000151',
+    // 备案
+    // record: 'ICP 备案文案',
+    // recordLink: 'ICP 备案指向链接',
+    // cyberSecurityRecord: '公安部备案文案',
+    // cyberSecurityLink: '公安部备案指向链接',
     // 项目开始时间
     startYear: '2020',
     // vssue评论功能
     vssueConfig: {
-      platform: 'github',
+      platform: 'github-v4',
       owner: 'fanzheming',
       repo: 'Blog',
       clientId: 'a1a26b26dfe555844fe1',
@@ -80,7 +84,7 @@ module.exports = {
     [
       '@vuepress-reco/vuepress-plugin-kan-ban-niang',
       {
-        theme: ['shizuku','haru2', 'blackCat', 'whiteCat', 'haru1', , 'haruto', 'koharu', 'izumi','wanko', 'miku', 'z16'],
+        theme: ['shizuku', 'haru2', 'blackCat', 'whiteCat', 'haru1', , 'haruto', 'koharu', 'izumi', 'wanko', 'miku', 'z16'],
         messages: {
           welcome: '欢迎来到',
           home: '心里的花，我想要带你回家。',
@@ -116,13 +120,13 @@ module.exports = {
       }
     ],
     [
-    '@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: {
-        message: "发现新内容可用",
-        buttonText: "刷新"
+      '@vuepress/pwa', {
+        serviceWorker: true,
+        updatePopup: {
+          message: "发现新内容可用",
+          buttonText: "刷新"
+        }
       }
-    }
     ]
   ]
 }  
