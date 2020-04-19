@@ -153,19 +153,19 @@ ______
 ## 2. vuepress扩展语法及内置组件
 
 - 自定义容器
-::: tip
+::: tip 提示
 这是一个提示
 :::
 
-::: warning
+::: warning 警告
 这是一个警告
 :::
 
-::: danger
+::: danger 危险警告
 这是一个危险警告
 :::
 
-::: details
+::: details 详情
 这是一个详情块，在 IE / Edge 中不生效
 :::
 
@@ -176,6 +176,23 @@ ______
 :::
 
 容器类型:  "tip"|"warning"|"danger"|"details"
+```
+
+<br/>
+
+- vuepress-plugin-container插件 容器
+
+::: theorem 牛顿第一定律
+假若施加于某物体的外力为零，则该物体的运动速度不变。
+
+::: right
+来自 [维基百科](https://zh.wikipedia.org/wiki/%E7%89%9B%E9%A1%BF%E8%BF%90%E5%8A%A8%E5%AE%9A%E5%BE%8B)
+:::
+
+
+```
+可在./vuepress/config中多次定义
+样式在./vuepress/styles/index.styl中添加
 ```
 <br/>
 

@@ -1,3 +1,56 @@
+// 底纹背景
+body
+  background-size 100%
+  background-image url('/line_bg.svg')
+  background-attachment fixed
+  background-repeat no-repeat
+  background-position 50%
+
+
+// 侧栏导航背景
+.sidebar
+  background-color var(--default-color-3) !important
+  a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+// 评论
+/* .vssue-header-comments-count
+  span {
+    color: $accentColor !important
+  }
+.vssue-header-powered-by
+  a {
+    color: $accentColor !important
+  }
+.vssue-status-info
+  color: $accentColor !important
+.vssue-new-comment-input
+  &:focus
+    border: 2px solid $accentColor !important
+.vssue .vssue-button:not(:disabled).vssue-button-primary {
+  color: $accentColor !important
+  border-color: $accentColor !important
+} */
+
+// 自定义容器
+.theorem
+  margin 1rem 0
+  padding .1rem 1.5rem
+  border-radius 0.4rem
+  background-color #f0f4f8
+  .title
+    font-weight bold
+
+.custom-block
+  &.right
+    color transparentify($textColor, 0.4)
+    font-size 0.9rem
+    text-align right
+
+// 杂记    
 .about
   .aboutNav
     list-style none
@@ -14,7 +67,7 @@
       text-align center
       cursor pointer
       &:hover
-        background #409EFF
+        background $accentColor
         color #ffffff
   .aboutContent
     width 100%;

@@ -1,7 +1,14 @@
 const sidebar = require('./config/sidebar/')
+const plugins = require('./config/plugins/')
+const nav = require('./config/nav/')
+
 module.exports = {
+  // 必须和仓库名一致
   base: '/Blog/',
+  // 打包的目录
   dest: 'blog',
+  locales: { '/': { lang: 'zh-CN' } },
+  // 主题
   theme: 'reco',
   title: "RainyDay",
   description: '记录生活的点滴时光',
@@ -17,22 +24,12 @@ module.exports = {
     ['meta', { name: 'msapplication-TileImage', content: '/icons/LatteAndCat.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
+  // 主题配置
   themeConfig: {
     type: 'blog',
     huawei: false,
-    nav: [
-      { text: '主页', link: '/', icon: 'reco-home' },
-      { text: '时间线', link: '/timeline/', icon: 'reco-date' },
-      { text: '杂记', link: '/about/', icon: 'reco-document' },
-      {
-        text: '联系我',
-        icon: 'reco-message',
-        items: [
-          { text: 'GitHub', link: 'https://github.com/fanzheming', icon: 'reco-github' },
-          { text: 'bilibili', link: 'https://space.bilibili.com/320956381', icon: 'reco-bilibili' },
-        ]
-      }
-    ],
+    nav,
+    sidebar,
     // 博客设置
     blogConfig: {
       category: {
@@ -52,7 +49,6 @@ module.exports = {
     // 侧边栏深度
     sidebarDepth: 2,
     displayAllHeaders: false,
-    sidebar,
     // 最后更新时间
     lastUpdated: '最后更新时间',
     // 作者
@@ -80,53 +76,5 @@ module.exports = {
   markdown: {
     lineNumbers: true
   },
-  plugins: [
-    [
-      '@vuepress-reco/vuepress-plugin-kan-ban-niang',
-      {
-        theme: ['shizuku', 'haru2', 'blackCat', 'whiteCat', 'haru1', , 'haruto', 'koharu', 'izumi', 'wanko', 'miku', 'z16'],
-        messages: {
-          welcome: '欢迎来到',
-          home: '心里的花，我想要带你回家。',
-          theme: '好吧，希望你能喜欢我的其他小伙伴。',
-          close: '你知道我喜欢吃什么吗？痴痴地望着你。'
-        },
-        width: 200,
-        height: 470,
-        modelStyle: {
-          position: 'fixed',
-          right: '110px',
-          bottom: '20px',
-          opacity: '0.9'
-        },
-        messageStyle: {
-          position: 'fixed',
-          right: '110px',
-          bottom: '370px'
-        },
-        btnStyle: {
-          bottom: '60px',
-          right: '80px'
-        }
-      }
-    ],
-    [
-      '@vuepress/last-updated', {
-        transformer: (timestamp, lang) => {
-          const moment = require('moment')
-          moment.locale('zh-cn')  //中文
-          return moment(timestamp).format('llll') // 2020年4月16日星期四 14:57
-        }
-      }
-    ],
-    [
-      '@vuepress/pwa', {
-        serviceWorker: true,
-        updatePopup: {
-          message: "发现新内容可用",
-          buttonText: "刷新"
-        }
-      }
-    ]
-  ]
+  plugins
 }  

@@ -5,7 +5,8 @@ module.exports = {
             title: '其它',
             collapsable: true,
             children: [
-                '其它/markdown语法'
+                '其它/markdown语法',
+                '其它/小知识'
             ]
         },
         {
