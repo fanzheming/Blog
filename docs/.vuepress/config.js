@@ -19,9 +19,9 @@ module.exports = {
     ['meta', { name: 'theme-color', content: '#409EFF' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-    ['link', { rel: 'apple-touch-icon', href: '/icons/LatteAndCat.png' }],
-    ['link', { rel: 'mask-icon', href: '/icons/LatteAndCat.svg', color: '#409EFF' }],
-    ['meta', { name: 'msapplication-TileImage', content: '/icons/LatteAndCat.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/icons/cat.png' }],
+    ['link', { rel: 'mask-icon', href: '/icons/cat.svg', color: '#409EFF' }],
+    ['meta', { name: 'msapplication-TileImage', content: '/icons/cat.png' }],
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   // 主题配置
