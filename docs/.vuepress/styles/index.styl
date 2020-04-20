@@ -1,4 +1,4 @@
-// 底纹背景
+// 背景
 body
   background-size 100%
   background-image url('/Blog/line_bg.svg')
@@ -21,64 +21,37 @@ body
     font-size 0.9rem
     text-align right
 
-// 杂记    
-.about
-  .aboutNav
-    list-style none
-    display flex
-    // justify-content space-between
-    justify-content left
-    padding 0
-    // box-shadow 0 1px 6px 0 rgba(0,0,0,0.2)
-    .aboutNavItem
-      width 12.5%
-      background #F0F2F4
-      color #000000
-      padding 5px 10px
-      text-align center
-      cursor pointer
-      &:hover
-        background $accentColor
-        color #ffffff
-  .aboutContent
-    width 100%;
-    box-shadow 0 1px 6px 0 rgba(0,0,0,0.2)
-    border-radius 0.25rem
+
+// 链接块
+.link-block
+  margin 0 -5px
+  width 100%
+  > .link-item
+    margin 15px 7px 0
     padding 10px
+    display inline-block
+    width 190px
+    height 100px
+    text-align center
+    background #f0f2f4
+    cursor pointer
+    text-decoration none !important
+    border 1px solid transparent
+    border-radius 4px
     box-sizing border-box
-    .colors
-      .midnightblue
-        color midnightblue
-        background-color midnightblue
-      .blue
-        color blue
-        background-color blue
-      .deepskyblue
-        color deepskyblue
-        background-color deepskyblue
-      .cornflowerblues
-        color cornflowerblue
-        background-color cornflowerblue
-      .lightskyblue
-        color lightskyblue
-        background-color lightskyblue
-        height 21px
-      li
-        height 21px
-        &:hover
-          color #ffffff
-    ul
-      list-style none
-      line-height 21px
-      img
-        width 16px
-        height 16px
-        margin 0 5px
-      li
-        // background #F0F2F4
-        padding 0 5px
-        margin-bottom 5px
-        display: flex;
-        align-items: center;
-        &:last-child
-          margin 0
+    overflow hidden
+    &:hover
+      border-color $accentColor
+    p
+      margin 0
+      line-height inherit
+      &.title
+        padding-top 10px
+        padding-bottom 5px
+      &.intro
+        font-size .8em
+        color #666
+        display -webkit-box
+        -webkit-box-orient vertical
+        -webkit-line-clamp 2
+        overflow hidden
