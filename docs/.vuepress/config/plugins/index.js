@@ -1,34 +1,34 @@
 module.exports = [
     // 看板娘
-    [
-        '@vuepress-reco/vuepress-plugin-kan-ban-niang',
-        {
-            theme: ['shizuku', 'haru2', 'blackCat', 'whiteCat', 'haru1', , 'haruto', 'koharu', 'izumi', 'wanko', 'miku', 'z16'],
-            messages: {
-                welcome: '欢迎来到',
-                home: '心里的花，我想要带你回家。',
-                theme: '好吧，希望你能喜欢我的其他小伙伴。',
-                close: '你知道我喜欢吃什么吗？痴痴地望着你。'
-            },
-            width: 200,
-            height: 470,
-            modelStyle: {
-                position: 'fixed',
-                right: '110px',
-                bottom: '20px',
-                opacity: '0.9'
-            },
-            messageStyle: {
-                position: 'fixed',
-                right: '110px',
-                bottom: '370px'
-            },
-            btnStyle: {
-                bottom: '60px',
-                right: '80px'
-            }
-        }
-    ],
+    // [
+    //     '@vuepress-reco/vuepress-plugin-kan-ban-niang',
+    //     {
+    //         theme: ['shizuku', 'haru2', 'blackCat', 'whiteCat', 'haru1', , 'haruto', 'koharu', 'izumi', 'wanko', 'miku', 'z16'],
+    //         messages: {
+    //             welcome: '欢迎来到',
+    //             home: '心里的花，我想要带你回家。',
+    //             theme: '好吧，希望你能喜欢我的其他小伙伴。',
+    //             close: '你知道我喜欢吃什么吗？痴痴地望着你。'
+    //         },
+    //         width: 200,
+    //         height: 470,
+    //         modelStyle: {
+    //             position: 'fixed',
+    //             right: '110px',
+    //             bottom: '20px',
+    //             opacity: '0.9'
+    //         },
+    //         messageStyle: {
+    //             position: 'fixed',
+    //             right: '110px',
+    //             bottom: '370px'
+    //         },
+    //         btnStyle: {
+    //             bottom: '60px',
+    //             right: '80px'
+    //         }
+    //     }
+    // ],
     // 最近更新时间
     [
       '@vuepress/last-updated', {
