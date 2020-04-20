@@ -30,6 +30,20 @@ module.exports = {
     huawei: false,
     nav,
     sidebar,
+    friendLink: [
+      {
+        title: '花音的个人随笔',
+        desc: '生活明朗，万物可爱。人间值得，未来可期',
+        // email: '',
+        link: 'https://huayin334.github.io/my-blog/'
+      },
+      {
+        title: 'vuepress-theme-reco',
+        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+        avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
+        link: 'https://vuepress-theme-reco.recoluan.com'
+      }
+    ],
     // 博客设置
     blogConfig: {
       category: {
