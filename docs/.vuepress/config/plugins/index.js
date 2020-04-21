@@ -30,15 +30,15 @@ module.exports = [
     //     }
     // ],
     // 最近更新时间
-    // [
-    //   '@vuepress/last-updated', {
-    //     transformer: (timestamp, lang) => {
-    //       const moment = require('moment')
-    //       moment.locale('zh-cn')  //中文
-    //       return moment(timestamp).format('llll') // 2020年4月16日星期四 14:57
-    //     }
-    //   }
-    // ],
+    [
+      '@vuepress/last-updated', {
+        transformer: (timestamp, lang) => {
+          const moment = require('moment')
+          moment.locale('zh-cn')  //中文
+          return moment(timestamp).format('llll') // 2020年4月16日星期四 14:57
+        }
+      }
+    ],
     [
         '@vuepress/pwa', {
             serviceWorker: true,
