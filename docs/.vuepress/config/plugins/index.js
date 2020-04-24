@@ -39,15 +39,15 @@ module.exports = [
         }
       }
     ],
-    [
-        '@vuepress/pwa', {
-            serviceWorker: true,
-            updatePopup: {
-                message: "发现新内容可用",
-                buttonText: "刷新"
-            }
-        }
-    ],
+    // [
+    //     '@vuepress/pwa', {
+    //         serviceWorker: true,
+    //         updatePopup: {
+    //             message: "发现新内容可用",
+    //             buttonText: "刷新"
+    //         }
+    //     }
+    // ],
     // 平滑滚动
     ['vuepress-plugin-smooth-scroll'],
     // 自定义容器 你可以多次使用这个插件
