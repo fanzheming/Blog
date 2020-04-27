@@ -13,7 +13,8 @@ module.exports = {
             title: '前端',
             collapsable: true,
             children: [
-                '前端/localStorage变动监听'
+                '前端/localStorage变动监听',
+                '前端/Grid布局笔记'
             ]
         }
     ]

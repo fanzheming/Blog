@@ -29,7 +29,8 @@ module.exports = {
     type: 'blog',
     huawei: false,
     nav,
-    sidebar,
+    // sidebar,
+    sidebar:'auto',
     friendLink: [
       {
         title: '花音的个人随笔',
