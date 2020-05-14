@@ -428,6 +428,45 @@ Grid布局常用套路：
   grid-area: header;
 }
 ```
+- **最常用的2种**
+```css
+// 响应式布局  每列的宽度在200px到1fr之间（总宽度大于200px时每行尽可能多的放下更多子项目）
+.container {
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+
+
+// 12等宽法+区域划分
+.container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "f f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+    background-color: steelblue;
+}
+.menu {
+    grid-area: m;
+    background-color: green;
+}
+.content {
+    grid-area: c;
+    background-color: pink;
+}
+.footer {
+   grid-area: f;
+   background-color: orange;
+}
+```
+
+
 
 相关参考 :      [阮一峰  Grid 网格布局教程](http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html)
 
